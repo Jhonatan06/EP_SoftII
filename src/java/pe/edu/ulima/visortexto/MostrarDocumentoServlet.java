@@ -31,7 +31,6 @@ public class MostrarDocumentoServlet extends HttpServlet {
         String titulo = req.getParameter("titulo");
         String contenido = req.getParameter("contenido");
         String tipo = req.getParameter("tipo");
-
         
         GestorFachada gestor = new GestorFachada();
         ByteArrayOutputStream baos = gestor.metRenderizar(titulo, contenido, tipo);
